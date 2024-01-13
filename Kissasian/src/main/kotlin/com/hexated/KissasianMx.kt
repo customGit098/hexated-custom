@@ -23,6 +23,9 @@ class KissasianMx : Kissasian() {
         "Genre/Reality-TV?page=" to "Reality-TV",
         "Genre/Mystery?page=" to "Drama Mystery",
         "Genre/Movie?page=" to "Movie",
+		"Genre/Movie/LatestUpdate?page=" to "MovieLatestUpdate",
+		"Genre/Drama/LatestUpdate?page=" to "DramaLatestUpdate",
+		"Country/Thailand/LatestUpdate?page=" to "Thailand/LatestUpdate",
     )
 
     override suspend fun search(query: String): List<SearchResponse> {
