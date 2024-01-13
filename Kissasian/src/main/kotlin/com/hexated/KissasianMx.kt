@@ -18,7 +18,7 @@ class KissasianMx : Kissasian() {
     override val mainPage = mainPageOf(
 		"Genre/Movie/LatestUpdate?page=" to "Movie Latest Update",
 		"Genre/Drama/LatestUpdate?page=" to "Drama Latest Update",
-		"Country/South-Korea/LatestUpdate?page=" to "South-KoreaLatest Update",
+		"Country/South-Korea/LatestUpdate?page=" to "South-Korea Latest Update",
 		"Country/South-Korea/MostPopular?page=" to "South-Korea Most Popular",
 		"Country/Thailand/LatestUpdate?page=" to "Thailand Latest Update",
 		"Country/Thailand/MostPopular?page=" to "Thailand Most Popular",
@@ -37,8 +37,8 @@ class KissasianMx : Kissasian() {
         "Genre/Detective?page=" to "Detective",
         "Genre/Medical?page=" to "Medical",
         "Genre/Horror?page=" to "Horror",
-        "Genre/Horror?Military=" to "Military",
-        "Genre/Horror?Historical=" to "Historical",
+        "Genre/Military?Military=" to "Military",
+        "Genre/Historical?Historical=" to "Historical",
     )
 
     override suspend fun search(query: String): List<SearchResponse> {
