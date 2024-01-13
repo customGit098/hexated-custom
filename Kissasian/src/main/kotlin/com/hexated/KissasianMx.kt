@@ -16,16 +16,29 @@ class KissasianMx : Kissasian() {
     override var name = "KissasianMx"
     override val contentInfoClass = "barContent"
     override val mainPage = mainPageOf(
+		"Genre/Movie/LatestUpdate?page=" to "Movie Latest Update",
+		"Genre/Drama/LatestUpdate?page=" to "Drama Latest Update",
+		"Country/South-Korea/LatestUpdate?page=" to "South-KoreaLatest Update",
+		"Country/South-Korea/MostPopular?page=" to "South-Korea Most Popular",
+		"Country/Thailand/LatestUpdate?page=" to "Thailand Latest Update",
+		"Country/Thailand/MostPopular?page=" to "Thailand Most Popular",
+		"Country/Taiwan/LatestUpdate?page=" to "Taiwan Latest Update",
+		"Country/Taiwan/MostPopular?page=" to "Taiwan Most Popular",
+		"Country/China/LatestUpdate?page=" to "China Latest Update",
+		"Country/China/MostPopular?page=" to "China Most Popular",
         "Status/Ongoing?page=" to "Drama Ongoing",
         "Status/Completed?page=" to "Drama Completed",
         "Status/Completed?page=" to "Drama Completed",
-        "Genre/Romance?page=" to "Drama Romance",
-        "Genre/Reality-TV?page=" to "Reality-TV",
-        "Genre/Mystery?page=" to "Drama Mystery",
         "Genre/Movie?page=" to "Movie",
-		"Genre/Movie/LatestUpdate?page=" to "MovieLatestUpdate",
-		"Genre/Drama/LatestUpdate?page=" to "DramaLatestUpdate",
-		"Country/Thailand/LatestUpdate?page=" to "Thailand/LatestUpdate",
+        "Genre/School?page=" to "School",
+        "Genre/Friendship?page=" to "Friendship",
+        "Genre/Melodrama?page=" to "Melodrama",
+        "Genre/Action?page=" to "Action",
+        "Genre/Detective?page=" to "Detective",
+        "Genre/Medical?page=" to "Medical",
+        "Genre/Horror?page=" to "Horror",
+        "Genre/Horror?Military=" to "Military",
+        "Genre/Horror?Historical=" to "Historical",
     )
 
     override suspend fun search(query: String): List<SearchResponse> {
